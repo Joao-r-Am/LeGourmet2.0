@@ -41,14 +41,14 @@ class ReadData : AppCompatActivity() {
 
             if (it.exists()){
 
-                val firstname = it.child("firstName").value
-                val lastName = it.child("lastName").value
-                val age = it.child("age").value
+                val Email = it.child("firstName").value
+                val senhaUser = it.child("lastName").value
+                val userName = it.child("age").value
                 Toast.makeText(this,"Successfuly Read",Toast.LENGTH_SHORT).show()
                 binding.etusername.text.clear()
-                binding.tvFirstName.text = firstname.toString()
-                binding.tvLastName.text = lastName.toString()
-                binding.tvAge.text = age.toString()
+                binding.tvFirstName.text = Email.toString()
+                binding.tvLastName.text = senhaUser.toString()
+                binding.tvAge.text = userName.toString()
 
             }else{
 

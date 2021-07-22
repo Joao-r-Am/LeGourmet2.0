@@ -20,31 +20,26 @@ class UpdateData : AppCompatActivity() {
         binding.updateBtn.setOnClickListener {
 
             val userName = binding.userName.text.toString()
-            val firstName = binding.firstName.text.toString()
-            val lastName = binding.lastname.text.toString()
-            val age = binding.age.text.toString()
+            val Email = binding.Email.text.toString()
 
-            updateData(userName,firstName,lastName,age)
+            updateData(userName,Email)
 
         }
 
     }
 
-    private fun updateData(userName: String, firstName: String, lastName: String, age: String) {
+    private fun updateData(userName: String, Email: String) {
 
         database = FirebaseDatabase.getInstance().getReference("Users")
         val user = mapOf<String,String>(
-                "firstName" to firstName,
-                "lastName" to lastName,
-                "age" to age
+                "firstName" to userName,
+                "lastName" to Email,
         )
 
         database.child(userName).updateChildren(user).addOnSuccessListener {
 
             binding.userName.text.clear()
-            binding.firstName.text.clear()
-            binding.lastname.text.clear()
-            binding.age.text.clear()
+            binding.Email.text.clear()
             Toast.makeText(this,"Successfuly Updated",Toast.LENGTH_SHORT).show()
 
 
