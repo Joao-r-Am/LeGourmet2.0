@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "736256938331",
+    "project_id": "databaseatualization",
+    "storage_bucket": "databaseatualization.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736256938331:android:f9a726d7bc25ca09694a7e",
+        "android_client_info": {
+          "package_name": "com.example.realtimedatabasekotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736256938331-crke2o9j18dhlvdmrjnot6ilk456au46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPWbXuZkGFWwBO6fEtV6SITtMMx6p8e6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736256938331-crke2o9j18dhlvdmrjnot6ilk456au46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
