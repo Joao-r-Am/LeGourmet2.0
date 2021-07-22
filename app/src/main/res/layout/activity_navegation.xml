@@ -43,7 +43,7 @@
         android:id="@+id/bt_addReceita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Adicionar Receita"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
         android:id="@+id/bt_recomendacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="52dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Recomendações"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,22 +62,10 @@
         app:layout_constraintTop_toBottomOf="@+id/bt_addReceita" />
 
     <Button
-        android:id="@+id/bt_pesquisaAvancada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:text="Pesquisa Avançada"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_recomendacao" />
-
-    <Button
         android:id="@+id/bt_pesquisaSimples"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="116dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Pesquise uma receita"
         app:layout_constraintEnd_toEndOf="parent"
