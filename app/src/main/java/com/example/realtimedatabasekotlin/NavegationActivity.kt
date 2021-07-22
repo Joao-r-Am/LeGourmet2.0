@@ -24,7 +24,7 @@ class NavegationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        lateinit var telaUpdateData: Button
+       lateinit var telaUpdateData: Button
         telaUpdateData = findViewById(R.id.bt_updateUser)
         telaUpdateData.setOnClickListener{
             val intent: Intent = Intent(applicationContext, UpdateData::class.java)

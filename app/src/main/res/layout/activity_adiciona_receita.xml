@@ -16,14 +16,14 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="112dp"
             android:fontFamily="casual"
             android:text="Compartilhe suas receitas!"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.53"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,12 +31,12 @@
             android:id="@+id/nomeReceita"
             android:layout_width="360dp"
             android:layout_height="50dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="108dp"
             android:background="@drawable/input"
             android:hint="Nome da Receita"
             android:paddingLeft="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintHorizontal_bias="0.509"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -68,26 +68,15 @@
 
 
         <Button
-            android:id="@+id/bt_voltaNav"
-            android:layout_width="140dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="592dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="@android:color/holo_red_dark"
-            android:text="Voltar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
             android:id="@+id/adicionarBtn"
             android:layout_width="140dp"
             android:layout_height="58dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="592dp"
+            android:layout_marginTop="600dp"
             android:backgroundTint="@android:color/holo_red_dark"
             android:text="Adicionar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

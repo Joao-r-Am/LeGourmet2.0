@@ -8,6 +8,18 @@
     android:layout_height="match_parent"
     tools:context=".NavegationActivity">
 
+    <Button
+        android:id="@+id/bt_updateUser"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -15,7 +27,7 @@
         android:fontFamily="casual"
         android:text="LeGourmet"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="62sp"
+        android:textSize="58sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +43,7 @@
         android:fontFamily="casual"
         android:text="Seja bem vindo ao LeGourmet"
         android:textColor="@android:color/background_dark"
-        android:textSize="28sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -41,8 +53,8 @@
 
     <Button
         android:id="@+id/bt_addReceita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220sp"
+        android:layout_height="60sp"
         android:layout_marginTop="44dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Adicionar Receita"
@@ -52,8 +64,8 @@
 
     <Button
         android:id="@+id/bt_recomendacao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220sp"
+        android:layout_height="60sp"
         android:layout_marginTop="52dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Recomendações"
@@ -63,8 +75,8 @@
 
     <Button
         android:id="@+id/bt_pesquisaSimples"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220sp"
+        android:layout_height="60sp"
         android:layout_marginTop="116dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Pesquise uma receita"
@@ -72,16 +84,5 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bemvindo" />
-
-    <ImageButton
-        android:id="@+id/bt_updateUser"
-        android:layout_width="62dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

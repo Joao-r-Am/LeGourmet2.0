@@ -3,7 +3,6 @@ package com.example.realtimedatabasekotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.realtimedatabasekotlin.databinding.ActivityReadDataBinding
 import com.example.realtimedatabasekotlin.databinding.ActivityReadReceitaBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -37,7 +36,7 @@ class ReadReceita : AppCompatActivity() {
 
     private fun readData(nomeReceita: String) {
 
-        database = FirebaseDatabase.getInstance().getReference("Receita")
+        database = FirebaseDatabase.getInstance().getReference("Receitas")
         database.child(nomeReceita).get().addOnSuccessListener {
 
             if (it.exists()){

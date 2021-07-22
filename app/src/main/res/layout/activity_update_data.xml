@@ -42,7 +42,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <EditText
-            android:id="@+id/Email"
+            android:id="@+id/email"
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginTop="36dp"
@@ -55,12 +55,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userName" />
 
+        <EditText
+            android:id="@+id/senhaUser"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/input"
+            android:fontFamily="casual"
+            android:hint="Senha"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
         <Button
             android:id="@+id/updateBtn"
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="496dp"
+            android:layout_marginTop="600dp"
             android:backgroundTint="#B10404"
             android:fontFamily="casual"
             android:text="Alterar"

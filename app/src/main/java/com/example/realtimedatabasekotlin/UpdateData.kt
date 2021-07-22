@@ -19,33 +19,36 @@ class UpdateData : AppCompatActivity() {
 
         binding.updateBtn.setOnClickListener {
 
+            val email = binding.email.text.toString()
             val userName = binding.userName.text.toString()
-            val Email = binding.Email.text.toString()
+            val senhaUser = binding.senhaUser.text.toString()
 
-            updateData(userName,Email)
+            updateData(email,userName,senhaUser)
 
         }
 
     }
 
-    private fun updateData(userName: String, Email: String) {
+    private fun updateData(Email: String, userName: String, senhaUser: String) {
 
-        database = FirebaseDatabase.getInstance().getReference("Users")
+        database = FirebaseDatabase.getInstance().getReference("User")
         val user = mapOf<String,String>(
-                "firstName" to userName,
-                "lastName" to Email,
+            "email" to Email,
+            "userName" to userName,
+            "senhaUser" to senhaUser,
         )
 
         database.child(userName).updateChildren(user).addOnSuccessListener {
 
+            binding.email.text.clear()
             binding.userName.text.clear()
-            binding.Email.text.clear()
-            Toast.makeText(this,"Successfuly Updated",Toast.LENGTH_SHORT).show()
+            binding.senhaUser.text.clear()
+            Toast.makeText(this,"Usuário atualizado",Toast.LENGTH_SHORT).show()
 
 
         }.addOnFailureListener{
 
-            Toast.makeText(this,"Failed to Update",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Falha ao atualizar",Toast.LENGTH_SHORT).show()
 
         }}
 }
