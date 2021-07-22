@@ -26,7 +26,7 @@ class ReadData : AppCompatActivity() {
 
             }else{
 
-                Toast.makeText(this,"PLease enter the Username",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Procure um usuário",Toast.LENGTH_SHORT).show()
 
             }
 

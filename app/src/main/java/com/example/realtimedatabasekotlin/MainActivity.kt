@@ -18,16 +18,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var database : DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         lateinit var telaReadData: Button
-        telaReadData = findViewById(R.id.bt_telaNav)
+        telaReadData = findViewById(R.id.bt_telaNavAct)
         telaReadData.setOnClickListener{
             val intent: Intent = Intent(applicationContext, NavegationActivity::class.java)
             startActivity(intent)
         }
+
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         binding.registerBtn.setOnClickListener {
 
@@ -49,7 +49,10 @@ class MainActivity : AppCompatActivity() {
 
                 Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
 
+
             }
+
         }
+
     }
 }

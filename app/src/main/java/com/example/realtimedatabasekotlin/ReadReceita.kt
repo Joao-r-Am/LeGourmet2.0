@@ -27,7 +27,7 @@ class ReadReceita : AppCompatActivity() {
 
             }else{
 
-                Toast.makeText(this,"PLease enter the Username",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Insira o nome de uma receita",Toast.LENGTH_SHORT).show()
 
             }
 
@@ -53,13 +53,13 @@ class ReadReceita : AppCompatActivity() {
 
             }else{
 
-                Toast.makeText(this,"User Doesn't Exist",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Receita inexistente",Toast.LENGTH_SHORT).show()
 
             }
 
         }.addOnFailureListener{
 
-            Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Falha",Toast.LENGTH_SHORT).show()
 
 
         }

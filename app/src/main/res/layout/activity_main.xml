@@ -96,12 +96,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/bt_telaNav"
+            android:id="@+id/bt_telaNavAct"
             android:layout_width="162dp"
             android:layout_height="64dp"
             android:layout_marginTop="604dp"
             android:backgroundTint="@color/black"
-            android:text="Continue"
+            android:text="Continuar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.935"
             app:layout_constraintStart_toStartOf="parent"

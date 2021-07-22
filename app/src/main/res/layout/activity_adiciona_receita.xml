@@ -11,21 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/shape"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="180dp"
-            android:text="REGISTRATION"
+            android:fontFamily="casual"
+            android:text="Compartilhe suas receitas!"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -75,12 +68,13 @@
 
 
         <Button
-            android:id="@+id/bt_telaReadData"
+            android:id="@+id/bt_voltaNav"
             android:layout_width="140dp"
             android:layout_height="58dp"
             android:layout_marginTop="592dp"
-            android:backgroundTint="@color/teal_200"
-            android:text="Continue"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Voltar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,7 +84,7 @@
             android:layout_height="58dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="592dp"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@android:color/holo_red_dark"
             android:text="Adicionar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.102"
