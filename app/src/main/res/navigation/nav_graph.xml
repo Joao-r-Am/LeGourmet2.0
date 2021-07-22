@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navegationActivity">
+
+    <activity
+        android:id="@+id/navegationActivity"
+        android:name="com.example.realtimedatabasekotlin.NavegationActivity"
+        android:label="activity_navegation"
+        tools:layout="@layout/activity_navegation" >
+        <action
+            android:id="@+id/action_navegationActivity_to_readReceita"
+            app:destination="@id/readReceita" />
+        <action
+            android:id="@+id/action_navegationActivity_to_adicionarReceita"
+            app:destination="@id/adicionarReceita" />
+        <action
+            android:id="@+id/action_navegationActivity_to_updateData"
+            app:destination="@id/updateData" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.realtimedatabasekotlin.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_navegationActivity"
+            app:destination="@id/navegationActivity" />
+    </activity>
+    <activity
+        android:id="@+id/adicionarReceita"
+        android:name="com.example.realtimedatabasekotlin.AdicionarReceita"
+        android:label="activity_adiciona_receita"
+        tools:layout="@layout/activity_adiciona_receita" />
+    <activity
+        android:id="@+id/readReceita"
+        android:name="com.example.realtimedatabasekotlin.ReadReceita"
+        android:label="activity_read_receita"
+        tools:layout="@layout/activity_read_receita" />
+    <activity
+        android:id="@+id/updateData"
+        android:name="com.example.realtimedatabasekotlin.UpdateData"
+        android:label="activity_update_data"
+        tools:layout="@layout/activity_update_data" />
+</navigation>

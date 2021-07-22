@@ -20,7 +20,14 @@ class NavegationActivity : AppCompatActivity() {
         lateinit var telaAddReceita: Button
         telaAddReceita = findViewById(R.id.bt_addReceita)
         telaAddReceita.setOnClickListener{
-            val intent: Intent = Intent(applicationContext, AdicionarReceita::class.java)
+            val intent: Intent = Intent(applicationContext, AdicionaReceita::class.java)
+            startActivity(intent)
+        }
+
+        lateinit var telaUpdateData: Button
+        telaUpdateData = findViewById(R.id.bt_recomendacao)
+        telaUpdateData.setOnClickListener{
+            val intent: Intent = Intent(applicationContext, UpdateData::class.java)
             startActivity(intent)
         }
 

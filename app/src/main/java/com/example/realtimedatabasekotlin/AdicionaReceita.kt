@@ -12,7 +12,7 @@ import com.example.realtimedatabasekotlin.databinding.ActivityAdicionaReceitaBin
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class AdicionarReceita : AppCompatActivity() {
+class AdicionaReceita : AppCompatActivity() {
 
     private lateinit var binding : ActivityAdicionaReceitaBinding
     private lateinit var database : DatabaseReference

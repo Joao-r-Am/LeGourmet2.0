@@ -22,6 +22,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        lateinit var telaReadData: Button
+        telaReadData = findViewById(R.id.bt_telaNav)
+        telaReadData.setOnClickListener{
+            val intent: Intent = Intent(applicationContext, NavegationActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.registerBtn.setOnClickListener {
 
             val Email = binding.Email.text.toString()
@@ -42,16 +49,7 @@ class MainActivity : AppCompatActivity() {
 
                 Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
 
-
             }
-            lateinit var telaReadData: Button
-            telaReadData = findViewById(R.id.bt_telaNav)
-            telaReadData.setOnClickListener{
-                val intent: Intent = Intent(applicationContext, NavegationActivity::class.java)
-                startActivity(intent)
-            }
-
         }
-
     }
 }
